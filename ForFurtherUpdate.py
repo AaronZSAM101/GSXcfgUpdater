@@ -539,10 +539,10 @@ couatl.atc_parking_codes = CGB
 '''
 
 # 打开文件并在末尾添加代码
-with open(os.path.join(GSX_ROOT, "rules_catering.cfg"), mode="a") as f:
+with open(os.path.join(GSX_ROOT, "texture", "rules_catering.cfg"), mode="a") as f:
     f.write('\n' + code_to_add_to_catering)
-with open(os.path.join(GSX_ROOT, "rules_handling.cfg"), mode="a") as f:
+with open(os.path.join(GSX_ROOT, "texture", "rules_handling.cfg"), mode="a") as f:
     f.write('\n' + code_to_add_to_catering)
-with open(os.path.join(GSX_ROOT, "rules_jetwaylogo.cfg"), mode="a") as f:
+with open(os.path.join(GSX_ROOT, "texture", "rules_jetwaylogo.cfg"), mode="a") as f:
     f.write('\n' + code_to_add_to_catering)
 print('Mission Complete.')
