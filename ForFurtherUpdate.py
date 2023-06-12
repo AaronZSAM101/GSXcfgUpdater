@@ -545,4 +545,4 @@ with open(os.path.join(GSX_ROOT, "texture", "rules_handling.cfg"), mode="a") as 
     f.write('\n' + code_to_add_to_catering)
 with open(os.path.join(GSX_ROOT, "texture", "rules_jetwaylogo.cfg"), mode="a") as f:
     f.write('\n' + code_to_add_to_catering)
-print('Mission Complete.')
+input('Mission Complete, press "Enter" to exit the Script.')
