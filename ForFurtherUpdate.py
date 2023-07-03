@@ -1,7 +1,7 @@
 import os
 # 定义文件路径
 GSX_ROOT=input('Please enter the root of your GSX:')
-Texture_ROOT=input('Please enter the root of your own Livery:')
+# Texture_ROOT=input('Please enter the root of your own Livery:')
 # 定义添加行
 code_to_add_to_catering = '''[BACL]
 couatl.icaoprefixes = ZBAA
@@ -277,6 +277,51 @@ couatl.basecolor = white
 couatl.icaoprefixes = ZSHC
 couatl.atc_parking_codes = Zhejiang Zhongyu Aiation Development
 couatl.basecolor = white
+
+[CKCA]
+couatl.icaoprefixes = ZUCK
+couatl.atc_parking_codes = Chongqing Air Catering CO.,LTD.
+couatl.basecolor = white
+
+[COMAC]
+couatl.icaoprefixes = ZSPD
+couatl.atc_parking_codes = COMAC Catering support ARJ21 "Electoric Car"
+couatl.basecolor = white
+
+[DAIK]
+couatl.icaoprefixes = ZBAD
+couatl.atc_parking_codes = Beijing Daxing International Airport Inflight Catering Ltd.
+couatl.basecolor = white
+
+[GGourmet_CN]
+couatl.icaoprefixes = ZSPD
+couatl.atc_parking_codes = GateGourmet China
+couatl.basecolor = white
+
+[GZAC]
+couatl.icaoprefixes = ZSGZ
+couatl.atc_parking_codes = GZ Air-Catering
+couatl.basecolor = white
+
+[HNA]
+couatl.icaoprefixes = ZJ ZJSY ZJHK ZJQH ZJYX
+couatl.atc_parking_codes = Hainan Air Catering CO.,LTD
+couatl.basecolor = white
+
+[IMA]
+couatl.icaoprefixes = ZBHH ZBDS ZBOW ZBLA ZBMZ ZBCF ZBTL ZBUL ZBXH ZBUH
+couatl.atc_parking_codes = Hainan Air Catering CO.,LTD
+couatl.basecolor = white
+
+[NNAP]
+couatl.icaoprefixes = ZGNN
+couatl.atc_parking_codes = Nanning Wuxu International Airport Company
+couatl.basecolor = white
+
+[YCAP]
+couatl.icaoprefixes = ZSYN
+couatl.atc_parking_codes = Yancheng Nanyang International Airport
+couatl.basecolor = white
 '''
 code_to_add_to_handling='''
 [3U]
@@ -542,7 +587,7 @@ couatl.atc_parking_codes = CGB
 with open(os.path.join(GSX_ROOT, "texture", "rules_catering.cfg"), mode="a") as f:
     f.write('\n' + code_to_add_to_catering)
 with open(os.path.join(GSX_ROOT, "texture", "rules_handling.cfg"), mode="a") as f:
-    f.write('\n' + code_to_add_to_catering)
+    f.write('\n' + code_to_add_to_handling)
 with open(os.path.join(GSX_ROOT, "texture", "rules_jetwaylogo.cfg"), mode="a") as f:
-    f.write('\n' + code_to_add_to_catering)
+    f.write('\n' + code_to_add_to_jetwaylogo)
 input('Mission Complete, press "Enter" to exit the Script.')
