@@ -17,8 +17,10 @@
 - **客制化涂装包位置(涂装包内的文件夹层级应和Addon Manager\texture目录下的文件夹层级一样)**
 ### 使用教程
 - 如果你是首次安装:
-    - 使用powershell运行 ```ForInitialInstall.py```（按Win+S，输入powershell，再输入python+空格+脚本文件所在路径。例：```python C:\Mengqiu\Desktop\ForInitialInstall.py```，再按提示输入路径。（为确保不出错，请**复制粘贴**路径，否则报错）
-    - 若运行成功，脚本会提示：```Mission Complete```，反之则会报错（脚本已经过测试，理论上应该不会再出错）。
+    - ~~使用powershell运行 ```ForInitialInstall.py```（按Win+S，输入powershell，再输入python+空格+脚本文件所在路径。例：```python C:\Mengqiu\Desktop\ForInitialInstall.py```，再按提示输入路径。（为确保不出错，请**复制粘贴**路径，否则报错）~~
+    **[2023.09.24 更新]** 由于shutil copytree函数不支持覆盖已有目录的文件，然后我又不想修，故建议**直接将texture文件夹的三个文件夹（`catering` `handling` `jetwaylogo`）直接复制到 `Addon Manager\texture`中并覆盖**
+    - ~~若运行成功，脚本会提示：`Mission Complete`，反之则会报错（脚本已经过测试，理论上应该不会再出错）。~~
+    **[2023.09.24 更新] 覆盖完成后，运行`ForFutherUpdate.py`**
 - 如果你刚更新完GSX：
-    - 使用powershell运行 ```ForFutherUpdate.py```（按Win+S，输入powershell，再输入python+空格+脚本文件所在路径。例：```python C:\Mengqiu\Desktop\ForFutherUpdate.py```，再按提示输入路径。（为确保不出错，请**复制粘贴**路径，否则报错）
-    - 若运行成功，脚本会提示：```Mission Complete```，反之则会报错（脚本已经过测试，理论上应该不会再出错）。
+    - 使用powershell运行 `ForFutherUpdate.py`（按Win+S，输入powershell，再输入python+空格+脚本文件所在路径。例：`python C:\Mengqiu\Desktop\ForFutherUpdate.py`，再按提示输入路径。（为确保不出错，请**复制粘贴**路径，否则报错）
+    - 若运行成功，脚本会提示：`Mission Complete`，反之则会报错（脚本已经过测试，理论上应该不会再出错）。

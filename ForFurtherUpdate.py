@@ -3,7 +3,8 @@ import os
 GSX_ROOT=input('Please enter the root of your GSX:')
 # Texture_ROOT=input('Please enter the root of your own Livery:')
 # 定义添加行
-code_to_add_to_catering = '''[BACL]
+code_to_add_to_catering = '''
+[BACL]
 couatl.icaoprefixes = ZBAA
 couatl.atc_parking_codes = Beijing Air Catering(Full Vechile)
 couatl.basecolor = white
@@ -323,6 +324,7 @@ couatl.icaoprefixes = ZSYN
 couatl.atc_parking_codes = Yancheng Nanyang International Airport
 couatl.basecolor = white
 '''
+
 code_to_add_to_handling='''
 [3U]
 couatl.atc_parking_codes = Sichuan Airlines Ground Service
@@ -570,7 +572,8 @@ couatl.icaoprefixes = ZGSD
 couatl.basecolor = blue
 '''
 
-code_to_add_to_jetwaylogo='''[BOC]
+code_to_add_to_jetwaylogo='''
+[BOC]
 couatl.icaoprefixes = Z ZSJN
 couatl.atc_parking_codes = BOC
 

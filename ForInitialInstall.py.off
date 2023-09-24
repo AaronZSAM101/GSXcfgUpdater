@@ -2,16 +2,17 @@ import os
 import shutil
 # 定义GSX路径
 GSX_ROOT=input('Please enter your GSX Root(until "texture"):')
-Texture_ROOT=input('Please enter your Texture Root:')
+Texture_ROOT=input('Please enter your cutsom Texture Root:')
 
 # 复制文件
-shutil.copytree((os.path.join(Texture_ROOT,"catering")),os.path.join(GSX_ROOT))
-shutil.copytree((os.path.join(Texture_ROOT,"handling")),os.path.join(GSX_ROOT))
-shutil.copytree((os.path.join(Texture_ROOT,"jetwaylogo")),os.path.join(GSX_ROOT))
+shutil.copytree((os.path.join(Texture_ROOT,"catering")),os.path.join(GSX_ROOT), overwrite='true')
+shutil.copytree((os.path.join(Texture_ROOT,"handling")),os.path.join(GSX_ROOT), overwrite='true')
+shutil.copytree((os.path.join(Texture_ROOT,"jetwaylogo")),os.path.join(GSX_ROOT), overwrite='true')
 
 # 复制cfg代码
 # 定义添加行
-code_to_add_to_catering = '''[BACL]
+code_to_add_to_catering = '''
+[BACL]
 couatl.icaoprefixes = ZBAA
 couatl.atc_parking_codes = Beijing Air Catering(Full Vechile)
 couatl.basecolor = white
@@ -533,7 +534,8 @@ couatl.icaoprefixes = ZGSD
 couatl.basecolor = blue
 '''
 
-code_to_add_to_jetwaylogo='''[BOC]
+code_to_add_to_jetwaylogo='''
+[BOC]
 couatl.icaoprefixes = Z ZSJN
 couatl.atc_parking_codes = BOC
 
